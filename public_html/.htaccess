@@ -1,0 +1,18 @@
+RewriteEngine on
+
+
+RewriteRule ^$ /assets/pages/login.php
+RewriteRule ^s-identifier$ /assets/pages/login.php
+RewriteRule ^recherche-plaque$ /assets/pages/search.php
+RewriteRule ^ajout-nouvelle-plaque$ /assets/pages/add.php
+RewriteRule ^fin-ajout$ /assets/pages/added.php
+RewriteRule ^modifier-plaque$ /assets/pages/modify.php
+RewriteRule ^saving$ /assets/pages/save.php
+RewriteRule ^commentaires$ /assets/pages/commentaires.php
+RewriteRule ^au-revoir$ /assets/pages/logout.php
+
+ErrorDocument 400 /assets/pages/error.php
+ErrorDocument 401 /assets/pages/error.php
+ErrorDocument 403 /assets/pages/error.php
+ErrorDocument 404 /assets/pages/error.php
+ErrorDocument 500 /assets/pages/error.php
