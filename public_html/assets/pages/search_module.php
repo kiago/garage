@@ -1,18 +1,31 @@
+<script language="javascript" type="text/javascript">
+var linkVar = 'nothing';
+function save(thevar){
+linkVar = thevar;
+document.getElementById('plate').innerHTML = thevar.getAttribute( 'plate' );
+
+}
+
+</script>
 <?php
 $actual_link = "http://$_SERVER[HTTP_HOST]";
 include '../db/library.php';
 
+
 include 'magnific.php';
 
 $html = '';
+$html .= '<div class="section4">';
 $html .= '<li class="result">';
 $html .= '<a class="image-popup-no-margins" target="_blank" href="urlString" rel="shadowbox">';
 $html .= '<img src="urlString" width="50" height="50">';
 $html .= '<h3>nameString</h3>';
 $html .= '<h3>plateMotor</h3>';
 $html .= '</a>';
-$html .= '<h3><a href="commentaires">Commentaires</a>&nbsp;&nbsp;&nbsp;<a href="modifier-plaque?id=plateOnly">Modifier</a></h3>';
+$html .= '<h3><a href="#displayPopup1" plate="plateOnly" onClick="save(this);" class="portfolio-link" data-toggle="modal">Commentaires</a>&nbsp;&nbsp;&nbsp;<a href="modifier-plaque?id=plateOnly">Modifier</a></h3>';
 $html .= '</li>';
+$html .= '</div>';
+
 
 // Get Search
 $search_string = preg_replace("/[^A-Za-z0-9]/", " ", $_POST['query']);
@@ -42,7 +55,7 @@ if (strlen($search_string) >= 1 && $search_string !== ' ') {
 			$display_motor = preg_replace("/".$search_string."/i", "<b class='highlight'>".$search_string."</b>", $result['motor_number']);
 
 
-			
+
 			$display_url = $actual_link."/uploads/".$result['url_photo'];
 			
 

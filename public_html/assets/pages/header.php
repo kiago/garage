@@ -23,6 +23,8 @@ $actual_link = "http://$_SERVER[HTTP_HOST]";
 <link rel="stylesheet" href="assets/css/pure-min.css">
 
 <!-- Load jQuery library  PROBLEME-->
+<link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+<link rel="stylesheet" href="assets/css/bootstrap.css" />
 <script  src="assets/js/jquery2.min.js"></script>
 <script>var $j = jQuery.noConflict(true);</script>
 <script src="assets/js/jquery.min.js"></script>

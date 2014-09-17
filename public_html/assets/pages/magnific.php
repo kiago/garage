@@ -1,5 +1,8 @@
 <!-- Load  magnificPOPUP -->
 <link rel="stylesheet" href="assets/css/magnific-popup.css" />
+<link rel="stylesheet" href="assets/css/portfolio.css" />
+
+
 
 <!-- <script src="js/jquery.js" type="text/javascript"></script> -->
 <script src="assets/js/jquery.magnific-popup.min.js"></script>
