@@ -44,7 +44,7 @@ jQuery(function($){
                 <input type="file" name="image" class="pure-button pure-button-primary"/>
               </div>
               <div class="pure-controls">
-                <button type="submit" name="submit" class="pure-button pure-button-primary">Enregistrer</button>
+                <button type="submit" name="submit" class="pure-button pure-button-primary">Enregistrer</button><a href="recherche-plaque">Retour</a>
               </div>
             </fieldset>
           </form>
