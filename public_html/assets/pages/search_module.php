@@ -1,11 +1,8 @@
 <script language="javascript" type="text/javascript">
-var linkVar = 'nothing';
 function save(thevar){
-linkVar = thevar;
 document.getElementById('plate').innerHTML = thevar.getAttribute( 'plate' );
-
+toSend=thevar.getAttribute( 'plate' );
 }
-
 </script>
 <?php
 $actual_link = "http://$_SERVER[HTTP_HOST]";
@@ -22,7 +19,7 @@ $html .= '<img src="urlString" width="50" height="50">';
 $html .= '<h3>nameString</h3>';
 $html .= '<h3>plateMotor</h3>';
 $html .= '</a>';
-$html .= '<h3><a href="#displayPopup1" plate="plateOnly" onClick="save(this);" class="portfolio-link" data-toggle="modal">Commentaires</a>&nbsp;&nbsp;&nbsp;<a href="modifier-plaque?id=plateOnly">Modifier</a></h3>';
+$html .= '<h3><a id="comm" href="#displayPopup1" plate="plateOnly" onClick="save(this);" class="portfolio-link" data-toggle="modal">Commentaires</a>&nbsp;&nbsp;&nbsp;<a href="modifier-plaque?id=plateOnly">Modifier</a></h3>';
 $html .= '</li>';
 $html .= '</div>';
 
