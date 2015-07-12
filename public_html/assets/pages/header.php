@@ -55,7 +55,7 @@ $actual_link = "http://$_SERVER[HTTP_HOST]";
 <!-- Load Fonts -->
 <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Sans:regular,bold" type="text/css" />
 
-<!-- Load custom js -->
+<!-- Load custom js  for search-->
 <script type="text/javascript" src="assets/js/custom.js"></script>
 <!-- make DELETABLE input js -->
 

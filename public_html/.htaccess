@@ -10,9 +10,3 @@ RewriteRule ^modifier-plaque$ /assets/pages/modify.php
 RewriteRule ^saving$ /assets/pages/save.php
 RewriteRule ^commentaires$ /assets/pages/commentaires.php
 RewriteRule ^au-revoir$ /assets/pages/logout.php
-
-ErrorDocument 400 /assets/pages/error.php
-ErrorDocument 401 /assets/pages/error.php
-ErrorDocument 403 /assets/pages/error.php
-ErrorDocument 404 /assets/pages/error.php
-ErrorDocument 500 /assets/pages/error.php

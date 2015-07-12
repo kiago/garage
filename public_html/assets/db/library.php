@@ -7,7 +7,7 @@ session_start();
 */
 
 $hostname_conn = "localhost";
-$database_conn = "search";
+$database_conn = "garage";
 $username_conn = "root";
 $password_conn = "root";
 
